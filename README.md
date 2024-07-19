@@ -80,14 +80,14 @@ constructor(uint256 _roundDuration, address _underlying, address _aavePool)
 
 #### Functions
 
-- **enter(uint256 amount)**: Enter the lottery by depositing amount of the underlying asset.
-- **exit(uint256 roundId)**: Exit the lottery and withdraw the initial deposit after the round ends.
-- **claim(uint256 roundId)**: Claim the prize if the caller is the winner of the specified round.
-- **getRound(uint256 roundId)**: Get the details of a specific round.
-- **getTicket(uint256 roundId, address user)**: Get the ticket details of a user for a specific round.
+- `enter(uint256 amount)`: Enter the lottery by depositing amount of the underlying asset.
+- `exit(uint256 roundId)`: Exit the lottery and withdraw the initial deposit after the round ends.
+- `claim(uint256 roundId)`: Claim the prize if the caller is the winner of the specified round.
+- `getRound(uint256 roundId)`: Get the details of a specific round.
+- `getTicket(uint256 roundId, address user)`: Get the ticket details of a user for a specific round.
 
 #### Internal Functions
 
-- **_drawWinner(uint256 total)**: Draw a random winner based on the total stake.
-- **_updateState()**: Update the state of the contract, handling the end of rounds, interest calculation, and winner selection.
+- `_drawWinner(uint256 total)`: Draw a random winner based on the total stake.
+- `_updateState()`: Update the state of the contract, handling the end of rounds, interest calculation, and winner selection.
 
